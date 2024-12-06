@@ -1,0 +1,159 @@
+/* Reset basic styles */
+body, h1, h2, h3, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Authentication Section Styling */
+section {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1.5em;
+}
+
+/* Buttons Styling */
+#authButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#authButtons button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#authButtons button:hover {
+    background-color: #0056b3;
+}
+
+#googleSignInButton {
+    background-color: #DB4437;
+}
+
+#googleSignInButton:hover {
+    background-color: #A93527;
+}
+
+/* Form Styling */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+button {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Main Content Styling After Sign-In */
+main {
+    width: 80%; /* Occupy 80% of the viewport */
+    height: 80%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Section Styling Inside Main */
+main section {
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Chart Container */
+canvas {
+    max-width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 95%; /* Adjust for smaller screens */
+    }
+
+    #authButtons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
