@@ -1,6 +1,6 @@
 import { googleSignIn, signUp, signIn, saveWorkHours, getWorkHours, getBiweeklyWorkHours, userSignOut, auth } from "./firebase.js";
 
-const HOURLY_RATE = 20;
+const HOURLY_RATE = 17.2;
 
 // Log Work Hours
 document.getElementById("logHoursForm").addEventListener("submit", async (e) => {
